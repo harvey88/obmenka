@@ -153,3 +153,53 @@ select {
 .testimonial .tiny-green {
   color: #48BF72;
 }
+.left-colom {
+  padding: 0;
+  background: blue;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  position: relative;
+}
+.left-colom:after {
+  position: absolute;
+  content: "";
+  width: 247px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  transform: translateX(50%);
+}
+.left-colom:before {
+  position: absolute;
+  content: "";
+  width: 247px;
+  height: 200px;
+  background: blue;
+  border-radius: 50%;
+  top: 0;
+  right: 40px;
+  z-index: 3;
+  transform: translateX(50%);
+}
+.left-colom .inner-colom {
+  float: left;
+}
+.right-colom {
+  padding: 0;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 200px;
+}
+.right-colom .inner-colom {
+  float: right;
+}
+.inner-colom {
+  padding: 15px;
+  max-width: 400px;
+}

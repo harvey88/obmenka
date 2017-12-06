@@ -66,10 +66,10 @@ textarea {
 .header{
 	margin-top: 20px;
 	margin-bottom: 20px;
-	 .main-menu{
-	 	padding: 0;
-	 	margin: 0;
-	 	list-style: none;
+	.main-menu{
+		padding: 0;
+		margin: 0;
+		list-style: none;
 		float: right;
 		li{
 			float: left;
@@ -108,49 +108,49 @@ textarea {
 	margin-top: 70px;
 	.left{
 		// border-radius: 0 150px 150px 0;
-		 background: #2E9ACC;
-		 padding: 40px 150px 40px 20px;
-		 z-index: 1;
+		background: #2E9ACC;
+		padding: 40px 150px 40px 20px;
+		z-index: 1;
 	}
 	.right{
 		// border-radius: 100px 0 0 100px;
 		background: #48BF72;
 		padding: 40px 20px 40px 240px;
 		&:after{
-		position: absolute;
-		content: "";
-		width: 247px;
-		height: 246px;
+			position: absolute;
+			content: "";
+			width: 247px;
+			height: 246px;
 
-		background: #2E9ACC;
-		border-radius: 50%;
-		top: 0;
-		left: -135px;
+			background: #2E9ACC;
+			border-radius: 50%;
+			top: 0;
+			left: -135px;
 
 
-	}
+		}
 	}
 	.sell-block {
 		position: relative;
 
-	input{
-		padding: 10px 40px;
+		input{
+			padding: 10px 40px;
 
 
-	}
-	.sell-block_title-left{
-		font-size: 30px;
-		color: #eee;
-		margin: 20px;
-	}
-	.sell-block_title-right{
-		font-size: 30px;
-		color: #eee;
-		margin: 20px;
-		text-align: right;
-	}
+		}
+		.sell-block_title-left{
+			font-size: 30px;
+			color: #eee;
+			margin: 20px;
+		}
+		.sell-block_title-right{
+			font-size: 30px;
+			color: #eee;
+			margin: 20px;
+			text-align: right;
+		}
 
-}
+	}
 }
 .reserve-row{
 	margin-left: 20px;
@@ -191,7 +191,64 @@ textarea {
 }
 .testimonial{
 	margin-bottom: 15px;
-.tiny-green{
-	color: #48BF72;
+	.tiny-green{
+		color: #48BF72;
+	}
 }
+
+
+.left-colom{
+	padding: 0;
+	background: blue;
+	display: flex;
+	align-items: center;
+	height: 200px;
+	position: relative;
+	&:after{
+			position: absolute;
+			content: "";
+			width: 247px;
+			height: 200px;
+			background: white;
+			border-radius: 50%;
+			top: 0;
+			right: 0;
+			z-index: 2;
+			transform: translateX(50%);
+		}
+	&:before{
+			position: absolute;
+			content: "";
+			width: 247px;
+			height: 200px;
+			background: blue;
+			border-radius: 50%;
+			top: 0;
+			right: 40px;
+			z-index: 3;
+			transform: translateX(50%);
+		}
+	.inner-colom{
+		float: left;
+	}
+
+}
+.right-colom{
+	padding: 0;
+	background: green;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 200px;
+
+	.inner-colom{
+		float: right;
+	}
+
+}
+.inner-colom{
+	padding: 15px;
+	max-width: 400px;
+
+
 }
