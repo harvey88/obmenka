@@ -1,0 +1,155 @@
+body {
+  background: grey;
+  font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Ragular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.button {
+  display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header .main-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: right;
+}
+.header .main-menu li {
+  float: left;
+  display: inline-block;
+  padding: 10px;
+}
+.header .main-menu li a {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+.header .main-menu li a:hover {
+  color: #48BF72;
+  text-decoration: none;
+}
+.main {
+  background: #fff;
+}
+.counters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.exchange {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.exchange .left {
+  background: #2E9ACC;
+  padding: 40px 150px 40px 20px;
+  z-index: 1;
+}
+.exchange .right {
+  background: #48BF72;
+  padding: 40px 20px 40px 240px;
+}
+.exchange .right:after {
+  position: absolute;
+  content: "";
+  width: 247px;
+  height: 246px;
+  background: #2E9ACC;
+  border-radius: 50%;
+  top: 0;
+  left: -135px;
+}
+.exchange .sell-block {
+  position: relative;
+}
+.exchange .sell-block input {
+  padding: 10px 40px;
+}
+.exchange .sell-block .sell-block_title-left {
+  font-size: 30px;
+  color: #eee;
+  margin: 20px;
+}
+.exchange .sell-block .sell-block_title-right {
+  font-size: 30px;
+  color: #eee;
+  margin: 20px;
+  text-align: right;
+}
+.reserve-row {
+  margin-left: 20px;
+}
+.reserve-row .reserve_st {
+  background: #F5F5F5;
+}
+.button-change {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.btn-change {
+  padding: 7px 70px;
+}
+.reserve-logo {
+  height: 40px;
+}
+.articles-inner {
+  margin: 10px;
+}
+.articles-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.logos-block {
+  margin: 20px 10px;
+  padding-bottom: 50px;
+}
+.reserve-sum {
+  text-align: center;
+  margin-top: 6px;
+}
+.testimonial {
+  margin-bottom: 15px;
+}
+.testimonial .tiny-green {
+  color: #48BF72;
+}
