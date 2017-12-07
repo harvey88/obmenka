@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Obmenka</title>
+	<title>Allpayments k-3</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,274 +24,268 @@
 <body>
 	<header class="header ">
 		<div class="container">
-					<a class="logo" href="#">
-						<img src="img/logo.png" alt="Logo">
-					</a>
-				<nav class="float-right  .col-md-8">
-					<ul class="main-menu">
-						<li><a href="#">Обмен</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Партнерская программа</a></li>
-						<li><a href="#">Вход / Регистрация</a></li>
-						<li><a href="#">Language</a></li>
-					</ul>
-				</nav>
+			<a class="logo" href="#">
+				<img src="img/logo.png" alt="Logo">
+			</a>
+			<nav class="float-right  ">
+				<ul class="main-menu">
+					<li><a href="#">Обмен</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Партнерская программа</a></li>
+					<li><a href="#">Вход / Регистрация</a></li>
+					<li><a href="#">Language</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 	<main >
 
+
+
+
+
+
+
 		<div class="container">
 			<div class="main">
-				<div class="counters">
-					<div class="counter">
-						<div class="counter_title">Нам доверяют</div>
+
+				<div class="counters-info row ">
+					<div class="counter-cell col-lg-3  ">
+						<div class="counter_title">Сегодня операций</div>
+						<div class="counter_value">347</div>
 					</div>
-					<div class="counter">
-						<div class="counter_title">Произведено обменов</div>
+					<div class="counter-cell col-lg-3 ">
+						<div class="counter_title">Сегодня обменов на:</div>
+						<div class="counter_value">85441</div>
 					</div>
-					<div class="counter">
-						<div class="counter_title">Среднее время обработки заявки (мин)
-						</div>
+					<div class="counter-cell col-lg-3  ">
+						<div class="counter_title">Резервы</div>
+						<div class="counter_value">552K</div>
+					</div>
+					<div class="counter-cell col-lg-3  ">
+						<div class="counter_title">PM TS</div>
+						<div class="counter_value">948.5</div>
 					</div>
 				</div>
 				<div class="exchange">
-					<div class="sell-block left  ">
-						<h3 class="sell-block_title-left">
-						Я отдаю
-						</h3>
-							<!-- selected cur -->
-										<!-- <div class="xchange-select">
-											<div class="select_js">
-												<div class="select_js_title">
-													<div class="select_js_title_ins">
-														<div class="select_ico"></div>
-														<div class="select_text">WEB</div>
-													</div>
-												</div>
-											</div>
-										</div> -->
 
-						<select class="sell-block_input">
-  							<option>Пункт 1</option>
-  							<option>Пункт 2</option>
-  							<option>Пункт 2</option>
-  							<option>Пункт 2</option>
-						</select>
-							<input type="text" name="name" required placeholder="Сума">
-						<div class="reserve input-container-cell" >
-                			От:<b> 50 </b> PAYEER USD <br>
-            			</div>
-					</div>
+					<div class="row  sell-block">
+						<div class="col-md-6 left-colom">
+							<div class="inner-colom">
+								<h3 class="sell-block_title-left">
+									Я отдаю
+								</h3>
 
 
+									<div id="myDropdown"></div>
 
+								<div class="xchange_data_left">
+									<div class="xchange_sum_label">
+										Сума
+									</div>
+									<div class="xchange_sum_input ">
+										<input type="text" name="name" ">
+									</div>
 
+								</div>
 
-				<!-- two block -->
-				<div class="sell-block right ">
-					<h3 class="sell-block_title-right">
-						Я получаю
-					</h3>
-
-						<input type="text" name="name" required placeholder="Сума">
-
-								<!-- Выпадающее меню  -->
-							<!-- <div class="xchange-select">
-								<ul>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-									<li><img src="img/logo/ADVCUSD.png">ADVCASH USD</li>
-								</ul>
-							</div> -->
-
-
-
-  						<select class="sell-block_input">
-  							<option>Пункт 1</option>
-  							<option>Пункт 2</option>
-  							<option>Пункт 2</option>
-  							<option>Пункт 2</option>
-						</select>
-
-						<div class="sell-block_input_cell">
-							<div class="reserve input-container-cell">От: <b>50</b>PerfectMoney EUR <br>Резерв:<b> 4878.43 </b>Курс:<b>1.21701</b>
+								<div class="reserve input-container-cell" >
+									От:<b> 50 </b> PAYEER USD <br>
+								</div>
 							</div>
 						</div>
+						<div class="col-md-6 right-colom">
+							<div class="inner-colom">
+								<h3 class="sell-block_title-right">
+									Я получаю
+								</h3>
+									<div id="myDropdown-right"></div>
+									<div class="xchange_data_left xchange_data_right">
+									<div class="xchange_sum_label">
+										Сума
+									</div>
+									<div class="xchange_sum_input ">
+										<input type="text" name="name" ">
+									</div>
 
-				</div>
-
-
-				</div>
-					<div class="button-change"> <button type="button" class="btn btn-primary btn-change">Обменять</button>
+								</div>
+								<div class="sell-block_input_cell">
+									<div class="reserve input-container-cell">От: <b>50</b>PerfectMoney EUR <br>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+
+				</div>
+				<div class="button-change"> <button type="button" class="btn btn-primary btn-change">Обменять</button>
+				</div>
 				<div class="reserve-row">
-					<div class="grid">
-						<div class="width-1-2">
+					<div class="grid row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
 							<h3>Резервы валют</h3>
 							<div class="grid reserve_st">
 								<div class="width-1-2">
 									<img class="reserve-logo" src="img/logo/PMUSD.png" alt="PerfectMoney">
-									PerfectMoney EUR</div>
+								PerfectMoney EUR</div>
 								<div class="width-1-2"><p class="reserve-sum">9,34</p></div>
 							</div>
 							<div class="grid reserve_st">
 								<div class="width-1-2">
 									<img class="reserve-logo" src="img/logo/PRUSD.png" alt="PAYEER">
-									PAYEER</div>
+								PAYEER</div>
 								<div class="width-1-2"><p class="reserve-sum">9,34</p></div>
 							</div>
 							<div class="grid reserve_st">
 								<div class="width-1-2">
 									<img class="reserve-logo" src="img/logo/P24UAH.png" alt="Приватбанк">
-									Приватбанк</div>
+								Приватбанк</div>
 								<div class="width-1-2">
 									<p class="reserve-sum">9,34</p></div>
-							</div>
-							<div class="grid reserve_st">
-								<div class="width-1-2">
-									<img class="reserve-logo" src="img/logo/WEXUSD.png" alt="Wexusd">
+								</div>
+								<div class="grid reserve_st">
+									<div class="width-1-2">
+										<img class="reserve-logo" src="img/logo/WEXUSD.png" alt="Wexusd">
 									Wexusd</div>
-								<div class="width-1-2">
-									<p class="reserve-sum">9,34</p></div>
-							</div>
-							<div class="grid reserve_st">
-								<div class="width-1-2">
-									<img class="reserve-logo" src="img/logo/bitcoin-cash.png" alt="Bitcoin">
-									Bitcoin</div>
-								<div class="width-1-2">
-									<p class="reserve-sum">9,34</p></div>
-							</div>
-							<div class="grid reserve_st">
-								<div class="width-1-2">
-									<img class="reserve-logo" src="img/logo/PMUSD.png" alt="PerfectMoney">
-									PerfectMoney USD</div>
-								<div class="width-1-2">
-									<p class="reserve-sum">9,34</p></div>
-							</div>
-							<div class="grid reserve_st">
-								<div class="width-1-2">
-									<img class="reserve-logo" src="img/logo/ADVCUSD.png" alt="ADVCASH USD">
-									ADVCASH USD</div>
-								<div class="width-1-2">
-									<p class="reserve-sum">9,34</p></div>
-							</div>
-						</div>
-						<div class="width-1-2">
-							<h3>Отзывы</h3>
-							<div class="testimonials-inner">
-	                            <div class="testimonial">
-				                    <span class="author tiny-green">Артём</span>
-				                    <span class="date tiny-grey">06.12.2017 11:10</span>
-				                    <div class="text">Пользуюсь не первый раз спасибо деньги получил</div>
-				                </div>
-                            	<div class="testimonial">
-                    				<span class="author tiny-green"> Юрий</span>
-                    				<span class="date tiny-grey">06.12.2017 11:01</span>
-                    				<div class="text">Благодарю! Всё отлично!</div>
-                				</div>
-                            	<div class="testimonial">
-                            		<span class="author tiny-green">Андрей</span>
-                    				<span class="date tiny-grey">06.12.2017 10:56</span>
-                    				<div class="text">Сколько раз пользуюсь вашим обменником, столько раз поражаюсь вашему супер обслуживанию. Чётко, понятно и главное - очень быстро! Спасибо, ребята, за это! Желаю процветания :)<br></div>
-                				</div>
-                            	<div class="testimonial">
-                    				<span class="author tiny-green">Максим</span>
-                    				<span class="date tiny-grey">05.12.2017 19:19 </span>
-                    				<div class="text">Впервые решил воспользоваться услугами такого обменника) при переводе, руки тряслись) было страшно!) Но все оказалось хорошо, обмен произошел за считанные минуты!)</div>
-                				</div>
-                        		<div class="text-right">
-                					<a href="/testimonial">Все отзывы (997)</a>
-            					</div>
-        					</div>
-						</div>
-					</div>
-				</div>
-				<!-- LAST NEWS -->
-				<div class="articles-inner">
-					<div class="articles-title">
-						<h3 >Последние новости </h3>
-					</div>
-					<div class="grid">
-						<div class="width-1-4 article">
-							<div class="title">
-								<a href="#">Повышение безопасности WEX-кодов</a>
-							</div>
-							<div class="text">Теперь при создании заявок на выпуск WEX-кодов Вы можете привязать его к никнейму своего аккаунта. Это значительно повысит его безопасность и позволит активировать его только Вам. Не пренебрегайте этим простым и эффективным методом.
-							</div>
-							<div>
-                    			<i>03 нояб. 2017 г.</i>
-                			</div>
-						</div>
-						<div class="width-1-4 article">
-							<div class="title">
-								<a href="#">50000 киви одной заявкой!</a>
-							</div>
-							<div class="text">
-                    			Уважаемые клиенты. Мы расширили функционал и сделали доступным создание заявки в 50000 киви вместо 15000 ранее. Надеемся, это сделает наше сотрудничество еще более плодотворным и удобным.
-							</div>
-							<div>
-                    			<i>03 нояб. 2017 г.</i>
-                			</div>
-						</div>
-						<div class="width-1-4 article">
-							<div class="title">
-								<a href="#">Возвращаемся к 1-му подтверждению транзакций биткоина</a>
-							</div>
-							<div class="text">
-								Уважаемые клиенты. Мы вновь снижаем требование к количеству подтверждений транзакций в сети биткоин с 3-х до 1-го
-							</div>
-							<div>
-                    			<i>03 нояб. 2017 г.</i>
-                			</div>
-						</div>
-						<div class="width-1-4 article">
-							<div class="title">
-								<a href="#">Увеличение необходимого числа подтверждений биткоина до 3-х</a>
-							</div>
-							<div class="text">
-                    			Уважаемые клиенты, в связи с некоторой неопределенностью в работе биткоина и возможностью хардфорка сети с 23.07.17 по 23.08.17 мы увеличиваем необходимое для зачисления количество подтверждений для Bitcoin c 1 до 3.
-							</div>
-							<div>
-                    			<i>03 нояб. 2017 г.</i>
-                			</div>
-						</div>
-					</div>
-				</div>
+									<div class="width-1-2">
+										<p class="reserve-sum">9,34</p></div>
+									</div>
+									<div class="grid reserve_st">
+										<div class="width-1-2">
+											<img class="reserve-logo" src="img/logo/bitcoin-cash.png" alt="Bitcoin">
+										Bitcoin</div>
+										<div class="width-1-2">
+											<p class="reserve-sum">9,34</p></div>
+										</div>
+										<div class="grid reserve_st">
+											<div class="width-1-2">
+												<img class="reserve-logo" src="img/logo/PMUSD.png" alt="PerfectMoney">
+											PerfectMoney USD</div>
+											<div class="width-1-2">
+												<p class="reserve-sum">9,34</p></div>
+											</div>
+											<div class="grid reserve_st">
+												<div class="width-1-2">
+													<img class="reserve-logo" src="img/logo/ADVCUSD.png" alt="ADVCASH USD">
+												ADVCASH USD</div>
+												<div class="width-1-2">
+													<p class="reserve-sum">9,34</p></div>
+												</div>
+											</div>
+											<div class=" col-sm-12 col-md-6 col-lg-6">
+												<h3>Отзывы</h3>
+												<div class="testimonials-inner">
+													<div class="testimonial">
+														<span class="author tiny-green">Артём</span>
+														<span class="date tiny-grey">06.12.2017 11:10</span>
+														<div class="text">Пользуюсь не первый раз спасибо деньги получил</div>
+													</div>
+													<div class="testimonial">
+														<span class="author tiny-green"> Юрий</span>
+														<span class="date tiny-grey">06.12.2017 11:01</span>
+														<div class="text">Благодарю! Всё отлично!</div>
+													</div>
+													<div class="testimonial">
+														<span class="author tiny-green">Андрей</span>
+														<span class="date tiny-grey">06.12.2017 10:56</span>
+														<div class="text">Сколько раз пользуюсь вашим обменником, столько раз поражаюсь вашему супер обслуживанию. Чётко, понятно и главное - очень быстро! Спасибо, ребята, за это! Желаю процветания :)<br></div>
+													</div>
+													<div class="testimonial">
+														<span class="author tiny-green">Максим</span>
+														<span class="date tiny-grey">05.12.2017 19:19 </span>
+														<div class="text">Впервые решил воспользоваться услугами такого обменника) при переводе, руки тряслись) было страшно!) Но все оказалось хорошо, обмен произошел за считанные минуты!)</div>
+													</div>
+													<div class="text-right">
+														<a href="/testimonial">Все отзывы (997)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- LAST NEWS -->
+									<div class="articles-inner">
+										<div class="articles-title">
+											<h3 >Последние новости </h3>
+										</div>
+										<div class="grid row">
+											<div class=" article col-md-6 col-sm-12 col-lg-3">
+												<div class="title">
+													<a href="#">Повышение безопасности WEX-кодов</a>
+												</div>
+												<div class="text">Теперь при создании заявок на выпуск WEX-кодов Вы можете привязать его к никнейму своего аккаунта. Это значительно повысит его безопасность и позволит активировать его только Вам. Не пренебрегайте этим простым и эффективным методом.
+												</div>
+												<div>
+													<i>03 нояб. 2017 г.</i>
+												</div>
+											</div>
+											<div class=" article col-md-6 col-sm-12 col-lg-3">
+												<div class="title">
+													<a href="#">50000 киви одной заявкой!</a>
+												</div>
+												<div class="text">
+													Уважаемые клиенты. Мы расширили функционал и сделали доступным создание заявки в 50000 киви вместо 15000 ранее. Надеемся, это сделает наше сотрудничество еще более плодотворным и удобным.
+												</div>
+												<div>
+													<i>03 нояб. 2017 г.</i>
+												</div>
+											</div>
+											<div class=" article col-md-6 col-sm-12 col-lg-3">
+												<div class="title">
+													<a href="#">Возвращаемся к 1-му подтверждению транзакций биткоина</a>
+												</div>
+												<div class="text">
+													Уважаемые клиенты. Мы вновь снижаем требование к количеству подтверждений транзакций в сети биткоин с 3-х до 1-го
+												</div>
+												<div>
+													<i>03 нояб. 2017 г.</i>
+												</div>
+											</div>
+											<div class=" article col-md-6 col-sm-12 col-lg-3">
+												<div class="title">
+													<a href="#">Увеличение необходимого числа подтверждений биткоина до 3-х</a>
+												</div>
+												<div class="text">
+													Уважаемые клиенты, в связи с некоторой неопределенностью в работе биткоина и возможностью хардфорка сети с 23.07.17 по 23.08.17 мы увеличиваем необходимое для зачисления количество подтверждений для Bitcoin c 1 до 3.
+												</div>
+												<div>
+													<i>03 нояб. 2017 г.</i>
+												</div>
+											</div>
+										</div>
+									</div>
 
-				<!-- Logos Block end -->
-				<div class="logos-block">
-					<div class="grid ">
-						<div class="width-1-4">
-							<a href="#" ><img src="img/logos/payeer.png" alt="Payeer"></a>
-						</div>
-						<div class="width-1-4">
-							<a href="#" ><img src="img/logos/privatbank.png" alt="Privatbank"></a>
-						</div>
-						<div class="width-1-4">
-							<a href="#" ><img src="img/logos/accepted.jpg" alt="Accepted"></a>
-						</div>
-						<div class="width-1-4">
-							<a href="#" ><img src="img/logos/bitcoin.png" alt="Bitcoin"></a>
-						</div>
-					</div>
-				</div>
+									<!-- Logos Block end -->
+									<div class="logos-block">
+										<div class=" row">
+											<div class="col-md-6 col-sm-12 col-lg-3">
+												<a href="#" ><img src="img/logos/payeer.png" alt="Payeer"></a>
+											</div>
+											<div class="col-md-6 col-sm-12 col-lg-3">
+												<a href="#" ><img src="img/logos/privatbank.png" alt="Privatbank"></a>
+											</div>
+											<div class="col-md-6 col-sm-12 col-lg-3">
+												<a href="#" ><img src="img/logos/accepted.jpg" alt="Accepted"></a>
+											</div>
+											<div class="col-md-6 col-sm-12 col-lg-3">
+												<a href="#" ><img src="img/logos/bitcoin.png" alt="Bitcoin"></a>
+											</div>
+										</div>
+									</div>
 
 
 
-			</div>
-		</div>
-	</main>
-	<footer class="footer">
+								</div>
+							</div>
+						</main>
+						<footer class="footer">
 
-	</footer>
-	<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.matchHeight-min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-</html>
+						</footer>
+						<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+						<script src="js/bootstrap.min.js"></script>
+						<script src="js/jquery.matchHeight-min.js"></script>
+						<script src="js/main.js"></script>
+					</body>
+					</html>

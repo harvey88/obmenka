@@ -67,52 +67,37 @@ select {
 .main {
   background: #fff;
 }
-.counters {
+.counters-info {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+.counters-info .counter-cell {
+  margin-top: 50px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 20%;
+  color: #2574B9;
+}
+.counters-info .counter-cell:not(:last-child) {
+  border-right: 1px solid #E5ECF6;
+}
+.counters-info .counter-cell .counter_title {
+  font-size: 16px;
+  text-align: center;
+}
+.counters-info .counter-cell .counter_value {
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
 }
 .exchange {
   background: #fff;
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
-}
-.exchange .left {
-  background: #2E9ACC;
-  padding: 40px 150px 40px 20px;
-  z-index: 1;
-}
-.exchange .right {
-  background: #48BF72;
-  padding: 40px 20px 40px 240px;
-}
-.exchange .right:after {
-  position: absolute;
-  content: "";
-  width: 247px;
-  height: 246px;
-  background: #2E9ACC;
-  border-radius: 50%;
-  top: 0;
-  left: -135px;
-}
-.exchange .sell-block {
-  position: relative;
-}
-.exchange .sell-block input {
-  padding: 10px 40px;
-}
-.exchange .sell-block .sell-block_title-left {
-  font-size: 30px;
-  color: #eee;
-  margin: 20px;
-}
-.exchange .sell-block .sell-block_title-right {
-  font-size: 30px;
-  color: #eee;
-  margin: 20px;
-  text-align: right;
 }
 .reserve-row {
   margin-left: 20px;
@@ -152,4 +137,94 @@ select {
 }
 .testimonial .tiny-green {
   color: #48BF72;
+}
+.exchange .sell-block {
+  width: 100%;
+  margin: 0;
+}
+.left-colom {
+  padding: 0;
+  background: #2E9ACC;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  position: relative;
+}
+.left-colom:after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  top: 0;
+  right: 15px;
+  z-index: 2;
+  transform: translateX(50%);
+}
+.left-colom:before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: #2E9ACC;
+  border-radius: 50%;
+  top: 0;
+  right: 40px;
+  z-index: 3;
+  transform: translateX(50%);
+}
+.left-colom .inner-colom {
+  float: left;
+  z-index: 4;
+}
+.right-colom {
+  padding: 0;
+  background: #48BF72;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 200px;
+}
+.right-colom .inner-colom {
+  float: right;
+  z-index: 4;
+}
+.inner-colom {
+  padding: 15px;
+  max-width: 400px;
+}
+.row {
+  margin: 0;
+}
+.sell-block_title-left,
+.sell-block_title-right {
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+}
+.sell-block_title-right .dd-container .dd-select {
+  border-radius: 20px;
+}
+.sell-block_title-right .dd-container .dd-select .dd-selected .dd-selected-image {
+  height: 40px;
+}
+.sell-block_title-right .dd-container .dd-select .dd-selected .dd-selected-text {
+  line-height: 2px;
+}
+.xchange_data_left {
+  display: flex;
+  margin-top: 10px;
+}
+.xchange_data_left .xchange_sum_label {
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 20px;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}
+.xchange_data_left .xchange_sum_input input {
+  background: #f0f5f3;
+  height: 40px;
+  width: 60%;
+  border-radius: 15px;
 }

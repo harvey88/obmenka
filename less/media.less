@@ -11,31 +11,40 @@
 
 	}
 	.exchange{
-		.sell-block input{
-		padding: 10px 20px;
+
+
+	}
+}
+@media(max-width: 767px){
+	.left-colom{
+		.inner-colom{
+			// float: none;
+			// display: flex;
+			margin: 0 auto;
 		}
-		.left{
-		padding: 15px 90px 15px 20px;
+		&:after {
+			display: none;
+
 		}
-		.right{
-		padding: 40px 20px 40px 200px;
+		&:before {
+			display: none;
+
+		}
+	}
+	.right-colom {
+		.inner-colom {
+			margin: 0 auto;
 		}
 	}
 }
-@media(max-width: 1198px){
-	.exchange{
-		.sell-block input{
-		padding: 10px 20px;
-		}
-		.left{
-		padding: 15px 170px 15px 20px;
-		}
-		.right{
-		padding: 40px 20px 40px 300px;
-		&:after{
-			// left: -215px;
-		}
-		}
+@media(max-width: 768px){
+	 .counters-info {
+		// display: inline-block;
+		// justify-content: flex-end;
+		// flex-direction: row;
+		// background: red;
 	}
-
+	.counter_title {
+		// color: red;
+	}
 }
